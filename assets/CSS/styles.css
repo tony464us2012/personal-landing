@@ -99,6 +99,11 @@ h5, h6, p {
     background-size: contain;
     background-repeat: no-repeat;
 }
+.pi4 {
+    background-image: url(/assets/Images/phone-book-screenshot.png);
+    background-size: cover;
+    background-repeat: no-repeat
+}
  footer {
      margin-top: 5%;
      padding: 2% 25%;
