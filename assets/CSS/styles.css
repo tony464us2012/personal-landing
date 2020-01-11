@@ -1,0 +1,113 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section-two,
+.section-three,
+.section-four,
+.section-five,
+.section-six {
+    padding: 5% 10%
+}
+.intro {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    
+}
+.intro-text {
+    margin-top: 12%;
+    font-family: 'Girassol', cursive;
+    perspective: 10px;
+    transform-style: preserve-3d;
+}
+.about-container, .work-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 70vh;
+    grid-gap: 10%;
+}
+.about-item-photo {
+ background-image: url(/assets/Images/2nd-background.png);
+ background-size: cover
+}
+.section-two {
+    margin: 1% 0
+}
+.section-three {
+    background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2));
+    background-size: cover;
+    text-align: center;
+    color: white
+}
+h4 {
+    font-family: 'Special Elite', cursive;
+}
+h5, h6, p {
+    font-family: 'Gelasio', serif
+}
+.work-item {
+    margin-top: 10%
+}
+.work-item-photo {
+    background-image: url(/assets/Images/computer.png);
+    background-size: cover
+}
+.skill-container, .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10%;
+}
+.skill-content-container {
+    display: flex;
+    background-image: url(/assets/Images/code.png);
+    background-size: cover;
+    justify-content: space-evenly;
+    padding: 1% 0;
+}
+.skill-content-item {
+    width: 120px;
+    margin: 3% 0;
+    padding: 2% 4%;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+}
+.skill-content-item h6 {
+    font-weight: 700
+}
+.section-six {
+    text-align: center;
+}
+.section-six h4 {
+    margin-bottom: 4%
+}
+
+.portfolio-item {
+    height: 235px;
+    background-color: grey;
+}
+.pi1 {
+    background-image: url(/assets/Images/109\ screenshot.png);
+    background-size: cover
+}
+.pi3 {
+    background-image: url(/assets/Images/alaska\ screenshot.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+ footer {
+     margin-top: 5%;
+     padding: 2% 25%;
+     background-image: linear-gradient(rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.308));
+     background-size: cover;
+     text-align: center;
+     color: white
+}
+form {
+    padding: 8% !important;
+    border-radius: 3px;
+}
