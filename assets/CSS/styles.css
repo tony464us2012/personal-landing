@@ -1,28 +1,36 @@
+html {
+    scroll-behavior: smooth;
+}
 html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+.border {
+    border: 2px solid black
+}
 .section-two,
 .section-three,
-.section-four,
 .section-five,
 .section-six {
     padding: 5% 10%
 }
+.section-four {
+    padding: 2% 10%;
+}
+
 .intro {
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
     background: transparent;
+    background-size: cover;
     
 }
 .intro-text {
     margin-top: 12%;
     font-family: 'Girassol', cursive;
-    perspective: 10px;
-    transform-style: preserve-3d;
 }
 .about-container, .work-container {
     display: grid;
@@ -30,10 +38,19 @@ html, body {
     grid-template-rows: 70vh;
     grid-gap: 10%;
 }
+.about-item-photo, 
+.about-item-content,
+.work-container,
+.si1, 
+.si2 {
+    opacity: 0
+}
 .about-item-photo {
  background-image: url(/assets/Images/2nd-background.png);
- background-size: cover
+ background-size: cover;
+ opacity: 0;
 }
+.about-item-content
 .section-two {
     margin: 1% 0
 }
@@ -104,15 +121,99 @@ h5, h6, p {
     background-size: cover;
     background-repeat: no-repeat
 }
+.input-field {
+    padding-top: -1rem
+}
  footer {
      margin-top: 5%;
-     padding: 2% 25%;
-     background-image: linear-gradient(rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.308));
+     padding: 5% 0%;
      background-size: cover;
      text-align: center;
-     color: white
+     color: white;
+     display: flex;
+     justify-content: center;
 }
 form {
-    padding: 8% !important;
-    border-radius: 3px;
+    align-self: center;
+    margin-top: 2%;
+    margin-left: 32.5%;
+    padding: 2% 3%;
+    border-radius: 5px;
+    width: 35% !important;
+}
+@media (min-width: 2560px ) {
+    .intro-text h1 {
+        font-size: 10rem 
+    }
+    .intro-text h4,
+    .about-item-content h4,
+    .section-three h4,
+    .work-item h4,
+    .skill-item h4,
+    .section-six h4,
+    #contact h4  {
+        font-size: 5rem 
+    }
+    .about-container, .work-container {
+        grid-template-rows: 50vh;
+        grid-gap: 10%;
+    }
+    .about-item-photo {
+        background-image: url(/assets/Images/2nd-background.png);
+        background-size: cover;
+        background-position: center;
+        opacity: 0;
+       }
+    .about-item-content h5,
+    .work-item h5,
+    .skill-item h5 {
+        font-size: 3rem
+    }
+    .about-item-content p,
+    .work-item p,
+    .skill-content-item p,
+    .skill-item p,
+    .work-item ul li
+     {
+        font-size: 2rem
+    }
+    .section-three h6, 
+    .skill-content-item h6 
+    {
+        font-size: 2.5rem
+    }
+    .section-three a {
+        font-size: 2rem;
+        
+    }
+    .work-item-photo {
+        background-position: center
+    }
+    .skill-content-item {
+        width: 25%;
+        padding: 1%
+    }
+    .portfolio-item {
+        height: 35vh;
+        background-size: cover;
+        background-position: center
+    }
+}
+@media (min-width: 1440px ) {
+
+}
+@media (min-width: 1024px ) {
+
+}
+@media (min-width: 768px ) {
+
+}
+@media (min-width: 425px ) {
+
+}
+@media (min-width: 375px ) {
+
+}
+@media (min-width: 320px ) {
+
 }
