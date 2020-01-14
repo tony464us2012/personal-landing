@@ -159,10 +159,7 @@ form {
         grid-gap: 10%;
     }
     .about-item-photo {
-        background-image: url(/assets/Images/2nd-background.png);
-        background-size: cover;
         background-position: center;
-        opacity: 0;
        }
     .about-item-content h5,
     .work-item h5,
@@ -199,21 +196,185 @@ form {
         background-position: center
     }
 }
-@media (min-width: 1440px ) {
-
-}
 @media (min-width: 1024px ) {
-
+    .about-item-photo {
+        background-size: contain;
+        background-position: center;
+       }
+    .about-item-content {
+        font-size: -10%;
+    }
+    .intro-text h4,
+    .about-item-content h4,
+    .section-three h4,
+    .work-item h4,
+    .skill-item h4,
+    .section-six h4,
+    #contact h4  {
+        font-size: 2rem 
+    }
+    .about-item-content h5,
+    .work-item h5,
+    .skill-item h5 {
+        font-size: 1rem
+    }
+    .about-item-content p,
+    .work-item p,
+    .skill-content-item p,
+    .skill-item p,
+    .work-item ul li
+     {
+        font-size: .8rem
+}
+.section-three a {
+    font-size: .8rem !important;
+    
+}
+    .portfolio-item {
+        height: 30vh;
+        background-size: cover;
+        background-repeat: no-repeat
+    }
 }
 @media (min-width: 768px ) {
-
-}
-@media (min-width: 425px ) {
-
-}
-@media (min-width: 375px ) {
-
+    .intro {
+        background-size: contain;
+        height: 70vh
+    }
+    .intro-text h1 {
+        font-size: 3rem 
+    }
+    .about-item-photo, .work-item-photo {
+        height: 50vh;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat
+    }
+    .intro-text h4,
+    .about-item-content h4,
+    .section-three h4,
+    .work-item h4,
+    .skill-item h4,
+    .section-six h4,
+    #contact h4  {
+        font-size: 1.5rem 
+    }
+    .about-container, .work-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 50vh;
+        grid-gap: 10%;
+    }
+    .about-item-content h5,
+    .work-item h5,
+    .skill-item h5 {
+        font-size: 1rem
+    }
+    .about-item-content p,
+    .work-item p,
+    .skill-content-item p,
+    .skill-item p,
+    .work-item ul li
+     {
+        font-size: .7rem
+    }
+    .section-three h6, 
+    .skill-content-item h6 
+    {
+        font-size: .7rem
+    }
+    .section-three a, button {
+        font-size: .7rem
+    }
+    .portfolio-item {
+        height: 50vh
+    }
+    form {
+        margin-top: 2%;
+        margin-left: 32.5%;
+        padding: 2% 5%;
+        width: 35% !important;
+    }
+    input { 
+        margin: -2px 0 !important
+    }
+    button {
+        font-size: 1rem
+    }
+           
 }
 @media (min-width: 320px ) {
-
+    .section-two,
+    .section-three,
+    .section-five,
+    .section-six {
+    padding: 5%
+}
+    .intro {
+        height: 60vh
+    }
+    .intro-text h1 {
+        font-size: 2rem;
+        margin-top: 20%;
+        text-align: center;
+    }
+    .intro-text h4 {
+        text-align: center
+    }
+    .intro-text h4,
+    .about-item-content h4,
+    .section-three h4,
+    .work-item h4,
+    .skill-item h4,
+    .section-six h4,
+    #contact h4  {
+        font-size: 1.8rem 
+    }
+    .about-container, .work-container {
+        display: block
+    }
+    .about-item-photo, .work-item-photo {
+        height: 50vh;
+        background-position: center
+    }
+    .about-item-content h5,
+    .work-item h5,
+    .skill-item h5 {
+        font-size: 1rem
+    }
+    .about-item-content p,
+    .work-item p,
+    .skill-content-item p,
+    .skill-item p,
+    .work-item ul li
+     {
+        font-size: .7rem
+    }
+    .section-three h6, 
+    .skill-content-item h6 
+    {
+        font-size: .7rem
+    }
+    .section-three a, button {
+        font-size: .7rem
+    }
+    .skill-container, .portfolio-container {
+        display: block
+    }
+    .portfolio-item {
+        height: 25vh;
+        margin-bottom: 2%
+    }
+    form {
+        margin-top: 2%;
+        margin-left: 10%;
+        padding: 2% 5%;
+        width: 80% !important;
+    }
+    input { 
+        margin: -2px 0 !important
+    }
+    button {
+        font-size: 1rem
+    }
 }
