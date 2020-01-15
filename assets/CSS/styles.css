@@ -211,12 +211,12 @@ form {
     .skill-item h4,
     .section-six h4,
     #contact h4  {
-        font-size: 2rem 
+        font-size: 2.5rem 
     }
     .about-item-content h5,
     .work-item h5,
     .skill-item h5 {
-        font-size: 1rem
+        font-size: 1.5rem
     }
     .about-item-content p,
     .work-item p,
@@ -224,10 +224,10 @@ form {
     .skill-item p,
     .work-item ul li
      {
-        font-size: .8rem
+        font-size: 1rem
 }
 .section-three a {
-    font-size: .8rem !important;
+    font-size: 1.2rem !important;
     
 }
     .portfolio-item {
@@ -236,89 +236,42 @@ form {
         background-repeat: no-repeat
     }
 }
-@media (min-width: 768px ) {
-    .intro {
-        background-size: contain;
-        height: 70vh
-    }
-    .intro-text h1 {
-        font-size: 3rem 
-    }
-    .about-item-photo, .work-item-photo {
-        height: 50vh;
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat
-    }
-    .intro-text h4,
-    .about-item-content h4,
-    .section-three h4,
-    .work-item h4,
-    .skill-item h4,
-    .section-six h4,
-    #contact h4  {
-        font-size: 1.5rem 
-    }
-    .about-container, .work-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 50vh;
-        grid-gap: 10%;
-    }
-    .about-item-content h5,
-    .work-item h5,
-    .skill-item h5 {
-        font-size: 1rem
-    }
-    .about-item-content p,
-    .work-item p,
-    .skill-content-item p,
-    .skill-item p,
-    .work-item ul li
-     {
-        font-size: .7rem
-    }
-    .section-three h6, 
-    .skill-content-item h6 
-    {
-        font-size: .7rem
-    }
-    .section-three a, button {
-        font-size: .7rem
-    }
-    .portfolio-item {
-        height: 50vh
-    }
-    form {
-        margin-top: 2%;
-        margin-left: 32.5%;
-        padding: 2% 5%;
-        width: 35% !important;
-    }
-    input { 
-        margin: -2px 0 !important
-    }
-    button {
-        font-size: 1rem
-    }
-           
-}
-@media (min-width: 320px ) {
+@media ( max-width: 768px ) {
     .section-two,
-    .section-three,
-    .section-five,
-    .section-six {
-    padding: 5% 8%
+.section-three,
+.section-four,
+.section-five,
+.section-six {
+    padding: 5%
 }
+.about-container, .work-container, .work-item {
+    display: block;
+    grid-gap: 0%;
+}
+ .work-container {
+     margin-top: -6%;
+     margin-bottom: -6%
+ }
+ .skills-container {
+     margin-bottom: -10%
+ }
+ .portfolio-container {
+     display: block;
+ }
+ .portfolio-item {
+     background-size: cover;
+     background-position: center -1%;
+     margin-bottom: 2%;
+ }
+
+}
+@media (max-width: 425px) {
     .intro {
-        height: 60vh
+        height: 55vh;
     }
     .intro-text h1 {
-        font-size: 2rem;
-        text-align: center;
-    }
-    .intro-text h4 {
-        text-align: center
+        font-size: 2.4rem ;
+        margin-top: 4vh !important
     }
     .intro-text h4,
     .about-item-content h4,
@@ -327,19 +280,12 @@ form {
     .skill-item h4,
     .section-six h4,
     #contact h4  {
-        font-size: 1.8rem 
-    }
-    .about-container, .work-container {
-
-    }
-    .about-item-photo, .work-item-photo {
-        height: 50vh;
-        background-position: center
+        font-size: 1.6rem 
     }
     .about-item-content h5,
     .work-item h5,
     .skill-item h5 {
-        font-size: 1rem
+        font-size: 1.2rem
     }
     .about-item-content p,
     .work-item p,
@@ -348,31 +294,24 @@ form {
     .work-item ul li
      {
         font-size: .7rem
-    }
-    .section-three h6, 
-    .skill-content-item h6 
-    {
-        font-size: .7rem
-    }
-    .section-three a, button {
-        font-size: .7rem
-    }
-    .skill-container, .portfolio-container {
-    }
-    .portfolio-item {
-        height: 25vh;
-        margin-bottom: 2%
-    }
-    form {
-        margin-top: 2%;
-        margin-left: 30%;
-        padding: 2% 5%;
-        width: 40% !important;
-    }
-    input { 
-        margin: -2px 0 !important
-    }
-    button {
-        font-size: 1rem
-    }
+}
+.section-three a, form label, .btn {
+    font-size: .7rem !important;
+}
+.skill-container {
+    display: block
+}
+.portfolio-container {
+}
+.portfolio-item {
+    padding: 0 2%;
+    background-size: contain;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-color: white
+}
+ form {
+     width: 70% !important;
+     margin-left: 15%;
+ }
 }
