@@ -46,7 +46,7 @@ html, body {
     opacity: 0
 }
 .about-item-photo {
- background-image: url(/assets/Images/2nd-background.png);
+ background-image: url(/assets/Images/2nd-background-new.jpg);
  background-size: cover;
  opacity: 0;
 }
@@ -70,7 +70,7 @@ h5, h6, p {
     margin-top: 10%
 }
 .work-item-photo {
-    background-image: url(/assets/Images/computer.png);
+    background-image: url(/assets/Images/computer-new.png);
     background-size: cover
 }
 .skill-container, .portfolio-container {
@@ -80,7 +80,7 @@ h5, h6, p {
 }
 .skill-content-container {
     display: flex;
-    background-image: url(/assets/Images/code.png);
+    background-image: url(/assets/Images/code-new.png);
     background-size: cover;
     justify-content: space-evenly;
     padding: 1% 0;
@@ -108,16 +108,20 @@ h5, h6, p {
     background-color: grey;
 }
 .pi1 {
-    background-image: url(/assets/Images/109.png);
+    background-image: url(/assets/Images/109-new.png);
+    background-size: cover
+}
+.pi2 {
+    background-image: url(/assets/Images/puma-duplicate-new.png);
     background-size: cover
 }
 .pi3 {
-    background-image: url(/assets/Images/alaska\ screenshot.png);
+    background-image: url(/assets/Images/alaska\ screenshot-new.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
 .pi4 {
-    background-image: url(/assets/Images/phone-book-screenshot.png);
+    background-image: url(/assets/Images/phone-book-screenshot-new.png);
     background-size: cover;
     background-repeat: no-repeat
 }
