@@ -98,6 +98,7 @@ h5, h6, p {
 }
 .section-six {
     text-align: center;
+    margin-bottom: 2rem
 }
 .section-six h4 {
     margin-bottom: 4%
@@ -107,29 +108,34 @@ h5, h6, p {
     height: 235px;
     background-color: grey;
 }
+.pi1,
+.pi2,
+.pi3,
+.pi4,
+.pi5 {
+    background-size: cover;
+    background-repeat: no-repeat
+}
 .pi1 {
     background-image: url(/assets/Images/109-new.png);
-    background-size: cover
 }
 .pi2 {
     background-image: url(/assets/Images/puma-duplicate-new.png);
-    background-size: cover
 }
 .pi3 {
     background-image: url(/assets/Images/alaska\ screenshot-new.png);
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 .pi4 {
     background-image: url(/assets/Images/phone-book-screenshot-new.png);
-    background-size: cover;
-    background-repeat: no-repeat
+}
+.pi5 {
+    background-image: url(/assets/Images/fence-kings-new.PNG);
 }
 .input-field {
     padding-top: -1rem
 }
  footer {
-     margin-top: 5%;
+     margin-top: 8%;
      padding: 5% 0%;
      background-size: cover;
      text-align: center;
@@ -305,8 +311,7 @@ form {
 .skill-container {
     display: block
 }
-.portfolio-container {
-}
+
 .portfolio-item {
     padding: 0 2%;
     background-size: contain;
