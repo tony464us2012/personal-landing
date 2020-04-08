@@ -69,6 +69,7 @@ html, body {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid black; /* The typwriter cursor */
   white-space: nowrap;
+  text-align: center;
   width: 0; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   animation: 
@@ -79,6 +80,7 @@ html, body {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid transparent; /* The typwriter cursor */
   white-space: nowrap;
+  text-align: center;
   width: 0; /* Keeps the content on a single line */
   margin: 1rem auto; /* Gives that scrolling effect as the typing happens */
   animation: 
