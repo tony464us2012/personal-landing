@@ -94,7 +94,7 @@ html, body {
   width: 0; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   animation: 
-    typing 3.5s steps(40, end) 18.5s forwards,
+    typing 5s steps(40, end) 18.5s forwards,
     blink-caret .75s step-end 16.5s infinite forwards;
 }
 
