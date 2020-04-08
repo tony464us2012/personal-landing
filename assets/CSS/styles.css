@@ -60,8 +60,53 @@ html, body {
     text-align: center;
     color: white
 }
-h4 {
+.intro-text h4,
+.intro-text h5 {
     font-family: 'Special Elite', cursive;
+    font-size: 1.8rem
+}
+.intro-text h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid black; /* The typwriter cursor */
+  white-space: nowrap;
+  width: 0; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: 
+    typing 3.5s steps(40, end) 4s forwards,
+    blink-caret .75s step-end 12 forwards;
+}
+.intro-text h4 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid transparent; /* The typwriter cursor */
+  white-space: nowrap;
+  width: 0; /* Keeps the content on a single line */
+  margin: 1rem auto; /* Gives that scrolling effect as the typing happens */
+  animation: 
+    typing 3.5s steps(40, end) 11s forwards,
+    blink-caret .75s step-end 9s 10 forwards;
+}
+.intro-text h5 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid transparent; /* The typwriter cursor */
+  white-space: nowrap;
+  width: 0; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: 
+    typing 3.5s steps(40, end) 18.5s forwards,
+    blink-caret .75s step-end 16.5s infinite forwards;
+}
+
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black }
 }
 h5, h6, p {
     font-family: 'Gelasio', serif
