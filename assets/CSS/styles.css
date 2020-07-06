@@ -1,10 +1,11 @@
-html {
-    scroll-behavior: smooth;
-}
+
 html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Gelasio', serif
 }
 .border {
     border: 2px solid black
@@ -13,361 +14,26 @@ html, body {
 .section-three,
 .section-five,
 .section-six {
-    padding: 5% 10%
+    padding: 5% 
 }
-.section-four {
-    padding: 2% 10%;
-}
+
 
 .intro {
     display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
+    height: 90vh;
+    background: url('/assets/Images/—Pngtree—silver\ black\ metallic\ geometric\ hexagon_740162.png');
     background-size: cover;
     
 }
 .intro-text {
     margin-top: 12%;
-    font-family: 'Girassol', cursive;
+    margin-left: 3rem;
+    color: white;
 }
-.about-container, .work-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 70vh;
-    grid-gap: 10%;
-}
-.about-item-photo, 
-.about-item-content,
-.work-container,
-.si1, 
-.si2 {
-    opacity: 0
-}
-.about-item-photo {
- background-image: url(/assets/Images/2nd-background-new.jpg);
- background-size: cover;
- opacity: 0;
-}
-.about-item-content
-.section-two {
-    margin: 1% 0
-}
-.section-three {
-    background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2));
-    background-size: cover;
-    text-align: center;
-    color: white
-}
-.intro-text h4,
-.intro-text h5 {
-    font-family: 'Special Elite', cursive;
-    font-size: 1.8rem
-}
-.intro-text h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid black; /* The typwriter cursor */
-  white-space: nowrap;
-  text-align: center;
-  width: 0; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  animation: 
-    typing 3.5s steps(40, end) 4s forwards,
-    blink-caret .75s step-end 12 forwards;
-}
-.intro-text h4 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid transparent; /* The typwriter cursor */
-  white-space: nowrap;
-  text-align: center;
-  width: 0; /* Keeps the content on a single line */
-  margin: 1rem auto; /* Gives that scrolling effect as the typing happens */
-  animation: 
-    typing 3.5s steps(40, end) 11s forwards,
-    blink-caret .75s step-end 9s 10 forwards;
-}
-.intro-text h5 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid transparent; /* The typwriter cursor */
-  white-space: nowrap;
-  width: 0; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  animation: 
-    typing 5s steps(40, end) 18.5s forwards,
-    blink-caret .75s step-end 16.5s infinite forwards;
+
+.card-image img {
+    width: 300px;
+    height: 350px
 }
 
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: black }
-}
-h5, h6, p {
-    font-family: 'Gelasio', serif
-}
-.work-item {
-    margin-top: 10%
-}
-.work-item-photo {
-    background-image: url(/assets/Images/computer-new.png);
-    background-size: cover
-}
-.skill-container, .portfolio-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10%;
-}
-.skill-content-container {
-    display: flex;
-    background-image: url(/assets/Images/code-new.png);
-    background-size: cover;
-    justify-content: space-evenly;
-    padding: 1% 0;
-}
-.skill-content-item {
-    width: 120px;
-    margin: 3% 0;
-    padding: 2% 4%;
-    background-color: white;
-    color: black;
-    border-radius: 4px;
-}
-.skill-content-item h6 {
-    font-weight: 700
-}
-.section-six {
-    text-align: center;
-    margin-bottom: 2rem
-}
-.section-six h4 {
-    margin-bottom: 4%
-}
-
-.portfolio-item {
-    height: 235px;
-    background-color: grey;
-}
-.pi1,
-.pi2,
-.pi3,
-.pi4,
-.pi5 {
-    background-size: cover;
-    background-repeat: no-repeat
-}
-.pi1 {
-    background-image: url(/assets/Images/109-new.png);
-}
-.pi2 {
-    background-image: url(/assets/Images/puma-duplicate-new.png);
-}
-.pi3 {
-    background-image: url(/assets/Images/alaska\ screenshot-new.png);
-}
-.pi4 {
-    background-image: url(/assets/Images/phone-book-screenshot-new.png);
-}
-.pi5 {
-    background-image: url(/assets/Images/fence-kings-new.PNG);
-}
-.input-field {
-    padding-top: -1rem
-}
- footer {
-     margin-top: 8%;
-     padding: 5% 0%;
-     background-size: cover;
-     text-align: center;
-     color: white;
-     display: flex;
-     justify-content: center;
-}
-form {
-    align-self: center;
-    margin-top: 2%;
-    margin-left: 32.5%;
-    padding: 2% 3%;
-    border-radius: 5px;
-    width: 35% !important;
-}
-@media (min-width: 2560px ) {
-    .intro-text h1 {
-        font-size: 10rem 
-    }
-    .intro-text h4,
-    .about-item-content h4,
-    .section-three h4,
-    .work-item h4,
-    .skill-item h4,
-    .section-six h4,
-    #contact h4  {
-        font-size: 5rem 
-    }
-    .about-container, .work-container {
-        grid-template-rows: 50vh;
-        grid-gap: 10%;
-    }
-    .about-item-photo {
-        background-position: center;
-       }
-    .about-item-content h5,
-    .work-item h5,
-    .skill-item h5 {
-        font-size: 3rem
-    }
-    .about-item-content p,
-    .work-item p,
-    .skill-content-item p,
-    .skill-item p,
-    .work-item ul li
-     {
-        font-size: 2rem
-    }
-    .section-three h6, 
-    .skill-content-item h6 
-    {
-        font-size: 2.5rem
-    }
-    .section-three a {
-        font-size: 2rem;
-        
-    }
-    .work-item-photo {
-        background-position: center
-    }
-    .skill-content-item {
-        width: 25%;
-        padding: 1%
-    }
-    .portfolio-item {
-        height: 35vh;
-        background-size: cover;
-        background-position: center
-    }
-}
-@media (min-width: 1024px ) {
-    .about-item-photo {
-        background-size: contain;
-        background-position: center;
-       }
-    .about-item-content {
-        font-size: -10%;
-    }
-    .intro-text h4,
-    .about-item-content h4,
-    .section-three h4,
-    .work-item h4,
-    .skill-item h4,
-    .section-six h4,
-    #contact h4  {
-        font-size: 2.5rem 
-    }
-    .about-item-content h5,
-    .work-item h5,
-    .skill-item h5 {
-        font-size: 1.5rem
-    }
-    .about-item-content p,
-    .work-item p,
-    .skill-content-item p,
-    .skill-item p,
-    .work-item ul li
-     {
-        font-size: 1rem
-}
-.section-three a {
-    font-size: 1.2rem !important;
-    
-}
-    .portfolio-item {
-        height: 30vh;
-        background-size: cover;
-        background-repeat: no-repeat
-    }
-}
-@media ( max-width: 768px ) {
-    .section-two,
-.section-three,
-.section-four,
-.section-five,
-.section-six {
-    padding: 5%
-}
-.about-container, .work-container, .work-item {
-    display: block;
-    grid-gap: 0%;
-}
- .work-container {
-     margin-top: -6%;
-     margin-bottom: -6%
- }
- .skills-container {
-     margin-bottom: -10%
- }
- .portfolio-container {
-     display: block;
- }
- .portfolio-item {
-     background-size: cover;
-     background-position: center -1%;
-     margin-bottom: 2%;
- }
-
-}
-@media (max-width: 425px) {
-    .intro {
-        height: 55vh;
-    }
-    .intro-text h1 {
-        font-size: 2.4rem ;
-        margin-top: 4vh !important
-    }
-    .intro-text h4,
-    .about-item-content h4,
-    .section-three h4,
-    .work-item h4,
-    .skill-item h4,
-    .section-six h4,
-    #contact h4  {
-        font-size: 1.6rem 
-    }
-    .about-item-content h5,
-    .work-item h5,
-    .skill-item h5 {
-        font-size: 1.2rem
-    }
-    .about-item-content p,
-    .work-item p,
-    .skill-content-item p,
-    .skill-item p,
-    .work-item ul li
-     {
-        font-size: .7rem
-}
-.section-three a, form label, .btn {
-    font-size: .7rem !important;
-}
-.skill-container {
-    display: block
-}
-
-.portfolio-item {
-    padding: 0 2%;
-    background-size: contain;
-    height: 30vh;
-    background-repeat: no-repeat;
-    background-color: white
-}
- form {
-     width: 70% !important;
-     margin-left: 15%;
- }
-}
