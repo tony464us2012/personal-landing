@@ -25,21 +25,29 @@ p {
     background: radial-gradient(circle, rgba(0, 0, 0, 0.9011379551820728) 0%, rgba(0, 0, 0, 0.6018382352941176) 48%, rgba(0, 0, 0, 0.9011379551820728) 100%), url('/assets/Images/background.jpg');
     background-size: cover;
     background-position: center center;
-    clip-path: polygon(0% 90%, 50% 100%, 100% 90%, 100% 0%, 0% 0%);
-    box-shadow: 4px 4px 10px black
+    -moz-animation: main 3s ease 1s alternate forwards;
+    -webkit-animation: main 3s ease 1s alternate forwards;
+    animation: main 3s ease 1s alternate forwards;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
 }
 
 .intro-text {
-    margin: 8rem auto;
+    display: grid;
+    margin: 0 auto;
+    place-content: center;
     color: ghostwhite;
-    text-align: center
-}
-.intro-text h3 {
-    margin-bottom: 2rem
+    text-align: center;
 }
 
-.nav-wrapper ul li {
-    color: black
+.intro-text h3,
+.intro-text h5 {
+    margin-bottom: 2rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.ml3 {
+    font-weight: 900;
+    font-size: 3.5em;
 }
 
 .section-two {
@@ -57,9 +65,11 @@ p {
     grid-gap: 15px
 }
 
+
 .card-image img {
     width: 300px;
-    height: 300px
+    height: 300px;
+    object-fit: cover;
 }
 
 .section-three {
@@ -125,31 +135,41 @@ p {
 
 @media (max-width: 425px) {
     h1 {
-        font-size: 24px
-    }
-
-    h2 {
         font-size: 20px
     }
 
-    h3 {
+    h2 {
         font-size: 16px
     }
 
-    h4 {
+    h3 {
         font-size: 12px
     }
 
-    h5 {
-        font-size: 10px
-    }
-
-    h6 {
+    h4 {
         font-size: 8px
     }
 
-    p {
-        font-size: 14px !important
+    h5 {
+        font-size: 6px
     }
 
+    h6 {
+        font-size: 5px
+    }
+
+    p {
+        font-size: 12px !important
+    }
+
+}
+
+@keyframes main {
+    0% {
+        clip-path: polygon(0% 100%, 50% 100%, 100% 100%, 100% 0%, 0% 0%);
+    }
+
+    100% {
+        clip-path: polygon(0% 90%, 50% 100%, 100% 90%, 100% 0%, 0% 0%);
+    }
 }
