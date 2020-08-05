@@ -25,9 +25,9 @@ p {
     background: radial-gradient(circle, rgba(0, 0, 0, 0.9011379551820728) 0%, rgba(0, 0, 0, 0.6018382352941176) 48%, rgba(0, 0, 0, 0.9011379551820728) 100%), url('/assets/Images/background.jpg');
     background-size: cover;
     background-position: center center;
-    -moz-animation: main 3s ease 1s alternate forwards;
-    -webkit-animation: main 3s ease 1s alternate forwards;
-    animation: main 3s ease 1s alternate forwards;
+    -moz-animation: main 3s ease 3s alternate forwards;
+    -webkit-animation: main 3s ease 3s alternate forwards;
+    animation: main 3s ease 3s alternate forwards;
     animation-timing-function: cubic-bezier(1, 0, 0, 1);
 }
 
@@ -45,9 +45,24 @@ p {
     font-family: 'Playfair Display', serif;
 }
 
-.ml3 {
+.intro-text h5,
+.intro-text p {
+    opacity: 0;
+    -moz-animation: fadeIn 3s ease 2s alternate forwards;
+    -webkit-animation: fadeIn 3s ease 2s alternate forwards;
+    animation: fadeIn 3s ease 2s alternate forwards;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+}
+
+
+.ml2 {
     font-weight: 900;
     font-size: 3.5em;
+}
+
+.ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
 }
 
 .section-two {
