@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 h1,
@@ -21,6 +22,7 @@ p {
 
 .intro {
     display: flex;
+    width: 100vw;
     height: 100vh;
     background: radial-gradient(circle, rgba(0, 0, 0, 0.9011379551820728) 0%, rgba(0, 0, 0, 0.6018382352941176) 48%, rgba(0, 0, 0, 0.9011379551820728) 100%), url('/assets/Images/background.jpg');
     background-size: cover;
@@ -33,6 +35,7 @@ p {
 
 .intro-text {
     display: grid;
+    width: 75%;
     margin: 0 auto;
     place-content: center;
     color: ghostwhite;
@@ -43,6 +46,10 @@ p {
 .intro-text h5 {
     margin-bottom: 2rem;
     font-family: 'Playfair Display', serif;
+}
+
+.intro-text p {
+    line-height: 175%;
 }
 
 .intro-text h5,
@@ -71,13 +78,27 @@ p {
 
 .section-two h4 {
     text-align: center;
+    margin-bottom: 1.5rem
 }
 
-.grid,
-.skills-container {
+.grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-gap: 15px
+}
+
+.skills-container {
+    display: flex;
+    text-align: center;
+}
+
+
+
+
+ul {
+    list-style-type: square;
+    list-style-position: outside;
+    list-style-image: none;
 }
 
 
@@ -102,22 +123,11 @@ p {
     margin-left: auto
 }
 
+
 .skills-container ul {
-    list-style: none;
+    list-style: circle
 }
 
-.skills-container ul li::before {
-    content: "";
-    background-image: url('/assets/Images/check-mark.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    position: relative;
-    top: 0.1rem;
-    margin-right: 0.2rem;
-}
 
 .learning,
 .contact {
@@ -150,7 +160,7 @@ p {
 
 @media (max-width: 425px) {
     h1 {
-        font-size: 20px
+        font-size: 18px
     }
 
     h2 {
@@ -175,6 +185,10 @@ p {
 
     p {
         font-size: 12px !important
+    }
+
+    .ml2 {
+        font-size: 3rem
     }
 
 }
