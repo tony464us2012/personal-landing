@@ -18,3 +18,10 @@ anime.timeline({loop: false})
     easing: "easeOutExpo",
     delay: 1000
   });
+
+  //Parallax
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems, options);
+  });
